@@ -1,0 +1,10 @@
+@keyframes neon-pulse {
+  0% { box-shadow: inset 40px 0 80px -20px #00d4ff, inset -40px 0 80px -20px #00d4ff; }
+  50% { box-shadow: inset 60px 0 120px -30px #08f, inset -60px 0 120px -30px #08f; }
+  100% { box-shadow: inset 40px 0 80px -20px #00d4ff, inset -40px 0 80px -20px #00d4ff; }
+}
+
+body {
+  background-color: #000;
+  animation: neon-pulse 4s infinite ease-in-out;
+}

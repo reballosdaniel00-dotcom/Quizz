@@ -122,13 +122,13 @@
                 happyAudio.pause();
                 
                 // Set the start time to 0:00 (lyrics: "You don't love me anymore")
-                sadAudio.currentTime = 10;
+                sadAudio.currentTime = 11;
                 sadAudio.play().catch(e => console.log("Audio blocked by browser"));
 
                 // Optional: Loop the first 6 seconds if you want that specific line repeated
                 sadAudio.addEventListener('timeupdate', function() {
-                    if(this.currentTime > 15) {
-                        this.currentTime = 10;
+                    if(this.currentTime > 16) {
+                        this.currentTime = 11;
                     }
                 });
 
@@ -143,4 +143,5 @@
     </script>
 </body>
 </html>
+
 
